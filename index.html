@@ -10,123 +10,428 @@
 
 <body>
 
- <!-- Main  -->
- <div class="bg-slate-400">
-   <!-- Container Div  -->
-   <div class="container mx-auto">
+  <!-- Main  -->
+  <div class="">
+    <!-- Container Div  -->
+    <div class="container mx-auto">
 
-    <!-- Header -->
-    <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </label>
+      <!-- Header -->
+      <div class="navbar bg-base-100 fixed">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
 
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li>
+                <a>Category</a>
+                <ul class="p-2">
+                  <li><a>Dashboard</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>About US</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl">Blogging</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
             <li><a>Home</a></li>
-            <li>
-              <a>Category</a>
-              <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
+            <li tabindex="0">
+              <details>
+                <summary>Categories</summary>
+                <ul class="p-2">
+                  <li><a>Dashboard</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
             </li>
-            <li><a>About US</a></li>
+            <li><a>About Us</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl">Blogging</a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li tabindex="0">
-            <details>
-              <summary>Categories</summary>
-              <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </details>
-          </li>
-          <li><a>About Us</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <div class="dropdown dropdown-end">
-          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-            <div class="w-10 rounded-full">
-              <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-            </div>
-          </label>
-          <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-            <li>
-              <a class="justify-between">
-                Profile
-                <span class="badge">New</span>
-              </a>
-            </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- Header End  -->
-
-    <!-- Blog Section Start -->
-    <section>
-      <div class="">
-        <div>
-          Hero
-        </div>
-        <div>
-          
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Footer  -->
-    <footer class="footer p-10 bg-base-200 text-base-content">
-      <div>
-        <span class="footer-title">Services</span> 
-        <a class="link link-hover">Branding</a> 
-        <a class="link link-hover">Design</a> 
-        <a class="link link-hover">Marketing</a> 
-        <a class="link link-hover">Advertisement</a>
-      </div> 
-      <div>
-        <span class="footer-title">Company</span> 
-        <a class="link link-hover">About us</a> 
-        <a class="link link-hover">Contact</a> 
-        <a class="link link-hover">Jobs</a> 
-        <a class="link link-hover">Press kit</a>
-      </div> 
-      <div>
-        <span class="footer-title">Legal</span> 
-        <a class="link link-hover">Terms of use</a> 
-        <a class="link link-hover">Privacy policy</a> 
-        <a class="link link-hover">Cookie policy</a>
-      </div> 
-      <div>
-        <span class="footer-title">Newsletter</span> 
-        <div class="form-control w-80">
-          <label class="label">
-            <span class="label-text">Enter your email address</span>
-          </label> 
-          <div class="relative">
-            <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" /> 
-            <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+        <div class="navbar-end">
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img
+                  src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80" />
+              </div>
+            </label>
+            <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer>
+      <!-- Header End  -->
+
+      <!-- <div class="toast toast-top toast-end">
+        <div class="alert alert-info">
+          <span>New mail arrived.</span>
+        </div>
+        <div class="alert alert-success">
+          <span>Message sent successfully.</span>
+        </div>
+      </div> -->
+
+      <!-- Blog Section Start -->
+      <section class="bg-white pt-16 dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+          <div class="lg:flex lg:-mx-6">
+            <div class="lg:w-3/4 lg:px-6">
+              <img class="object-cover object-center w-full h-80 xl:h-[28rem] rounded-xl"
+                src="https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80"
+                alt="">
+              <div>
+                <p class="mt-6 text-sm text-blue-500 uppercase">Want to know</p>
+          
+                <div class="badge badge-primary badge-outline">primary</div>
+                <div class="badge badge-secondary badge-outline">secondary</div>
+                <div class="badge badge-accent badge-outline">accent</div>
+
+                <h1 class="max-w-lg mt-4 text-2xl font-semibold leading-tight text-gray-800 dark:text-white">
+                  Ui အကြောင်းဘယ်လောက်သိပါသလဲ?
+                </h1>
+
+                <!-- Img  -->
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center mt-6">
+                    <img class="object-cover object-center w-10 h-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                      alt="">
+
+                    <div class="mx-4">
+                      <h1 class="text-sm text-gray-700 dark:text-gray-200">Kyaw Ko Ko</h1>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">Normal Developer</p>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- Categories  -->
+            <div class="mt-8 lg:w-1/4 lg:mt-0 lg:px-6">
+              <div>
+                <h3 class="text-blue-500 capitalize">Vensu Signs</h3>
+
+                <a href="#"
+                  class="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 dark:text-gray-400 ">
+                  How to raise $100k+ by using blox ui kit on your design
+                </a>
+              </div>
+
+              <hr class="my-6 border-gray-200 dark:border-gray-700">
+
+              <div>
+                <h3 class="text-blue-500 capitalize">Astroglogy</h3>
+
+                <a href="#"
+                  class="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 dark:text-gray-400 ">
+                  Should you creat UI Product by using Blox?
+                </a>
+              </div>
+
+              <hr class="my-6 border-gray-200 dark:border-gray-700">
+
+              <div>
+                <h3 class="text-blue-500 capitalize">Tarot</h3>
+
+                <a href="#"
+                  class="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 dark:text-gray-400 ">
+                  Top 10 Blocks you can get on Blox's collection.
+                </a>
+              </div>
+
+              <hr class="my-6 border-gray-200 dark:border-gray-700">
+
+              <div>
+                <h3 class="text-blue-500 capitalize">Premium kits</h3>
+
+                <a href="#"
+                  class="block mt-2 font-medium text-gray-700 hover:underline hover:text-gray-500 dark:text-gray-400 ">
+                  Top 10 Ui kit you can get on Blox's collection.
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Read More 1  -->
+      <section class="bg-white dark:bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+          <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">Zodiac</h1>
+
+          <div class="grid grid-cols-1 gap-8 mt-5 md:mt-10 md:grid-cols-2">
+            <div class="lg:flex">
+              <img class="object-cover w-full h-56 rounded-lg lg:w-64"
+                src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt="">
+
+              <div class="flex flex-col justify-between py-6 lg:mx-6">
+                <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                  How to use sticky note for problem solving
+                </a>
+
+                <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2019</span>
+              </div>
+            </div>
+
+            <div class="lg:flex">
+              <img class="object-cover w-full h-56 rounded-lg lg:w-64"
+                src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt="">
+
+              <div class="flex flex-col justify-between py-6 lg:mx-6">
+                <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                  How to use sticky note for problem solving
+                </a>
+
+                <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ea.</p>
+
+                <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2019</span>
+              </div>
+            </div>
+
+            <div class="lg:flex">
+              <img class="object-cover w-full h-56 rounded-lg lg:w-64"
+                src="https://images.unsplash.com/photo-1544654803-b69140b285a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt="">
+
+              <div class="flex flex-col justify-between py-6 lg:mx-6">
+                <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                  Morning routine to boost your mood
+                </a>
+
+                <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ea.</p>
+
+                <span class="text-sm text-gray-500 dark:text-gray-300">On: 25 November 2020</span>
+              </div>
+            </div>
+
+            <div class="lg:flex">
+              <img class="object-cover w-full h-56 rounded-lg lg:w-64"
+                src="https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2048&q=80"
+                alt="">
+
+              <div class="flex flex-col justify-between py-6 lg:mx-6">
+                <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                  All the features you want to know
+                </a>
+
+                <span class="text-sm text-gray-500 dark:text-gray-300">On: 30 September 2020</span>
+              </div>
+            </div>
+
+            <div class="lg:flex">
+              <img class="object-cover w-full h-56 rounded-lg lg:w-64"
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1484&q=80"
+                alt="">
+
+              <div class="flex flex-col justify-between py-6 lg:mx-6">
+                <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                  Minimal workspace for your inspirations
+                </a>
+
+                <span class="text-sm text-gray-500 dark:text-gray-300">On: 13 October 2019</span>
+              </div>
+            </div>
+
+            <div class="lg:flex">
+              <img class="object-cover w-full h-56 rounded-lg lg:w-64"
+                src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                alt="">
+
+              <div class="flex flex-col justify-between py-6 lg:mx-6">
+                <a href="#" class="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">
+                  What do you want to know about Blockchane
+                </a>
+
+                <span class="text-sm text-gray-500 dark:text-gray-300">On: 20 October 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Read More 2  -->
+      <h1 class="text-2xl px-2 py-3"> Read More 2</h1>
+      <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl px-2  md:px-0 lg:py-10">
+        <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+          <div class="p-8 bg-white border rounded shadow-sm">
+            <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a href="/" class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800" aria-label="Category">weekend</a>
+              <span class="text-gray-600">— 1 Feb 2020</span>
+            </p>
+            <a href="/" aria-label="Article" title="Jingle Bells" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400">Jingle Bells</a>
+            <p class="mb-5 text-gray-700">
+              Some pilots get picked and become television programs. Some don't, become nothing.
+            </p>
+            <div class="flex items-center">
+              <a href="/" aria-label="Author" title="Author" class="mr-3">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+              </a>
+              <div>
+                <a href="/" aria-label="Author" title="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Vasile Melinte</a>
+                <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 bg-white border rounded shadow-sm">
+            <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a href="/" class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800" aria-label="Category">holidays</a>
+              <span class="text-gray-600">— 15 Nov 2020</span>
+            </p>
+            <a href="/" aria-label="Article" title="Happy new Year" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400">Happy new Year</a>
+            <p class="mb-5 text-gray-700">
+              Pommy ipsum smeg head whizz morris dancers come hither, bugger codswallop gob. Taking the mick middle class bog.
+            </p>
+            <div class="flex items-center">
+              <a href="/" aria-label="Author" title="Author" class="mr-3">
+                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+              </a>
+              <div>
+                <a href="/" aria-label="Author" title="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">John Doe</a>
+                <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 bg-white border rounded shadow-sm">
+            <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a href="/" class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800" aria-label="Category">programming</a>
+              <span class="text-gray-600">— 28 Dec 2020</span>
+            </p>
+            <a href="/" aria-label="Article" title="Why i love C++" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400">Why i love C++</a>
+            <p class="mb-5 text-gray-700">
+              Sportacus andrew weatherall goose Refined gentlemen super mario des lynam alpha trion zap rowsdower.
+            </p>
+            <div class="flex items-center">
+              <a href="/" aria-label="Author" title="Author" class="mr-3">
+                <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+              </a>
+              <div>
+                <a href="/" aria-label="Author" title="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Andrew Larkin</a>
+                <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-8 bg-white border rounded shadow-sm">
+            <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a href="/" class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800" aria-label="Category">weekend</a>
+              <span class="text-gray-600">— 1 Feb 2020</span>
+            </p>
+            <a href="/" aria-label="Article" title="Jingle Bells" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400">Jingle Bells</a>
+            <p class="mb-5 text-gray-700">
+              Some pilots get picked and become television programs. Some don't, become nothing.
+            </p>
+            <div class="flex items-center">
+              <a href="/" aria-label="Author" title="Author" class="mr-3">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+              </a>
+              <div>
+                <a href="/" aria-label="Author" title="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Vasile Melinte</a>
+                <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 bg-white border rounded shadow-sm">
+            <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a href="/" class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800" aria-label="Category">holidays</a>
+              <span class="text-gray-600">— 15 Nov 2020</span>
+            </p>
+            <a href="/" aria-label="Article" title="Happy new Year" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400">Happy new Year</a>
+            <p class="mb-5 text-gray-700">
+              Pommy ipsum smeg head whizz morris dancers come hither, bugger codswallop gob. Taking the mick middle class bog.
+            </p>
+            <div class="flex items-center">
+              <a href="/" aria-label="Author" title="Author" class="mr-3">
+                <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+              </a>
+              <div>
+                <a href="/" aria-label="Author" title="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">John Doe</a>
+                <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-8 bg-white border rounded shadow-sm">
+            <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a href="/" class="transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800" aria-label="Category">programming</a>
+              <span class="text-gray-600">— 28 Dec 2020</span>
+            </p>
+            <a href="/" aria-label="Article" title="Why i love C++" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400">Why i love C++</a>
+            <p class="mb-5 text-gray-700">
+              Sportacus andrew weatherall goose Refined gentlemen super mario des lynam alpha trion zap rowsdower.
+            </p>
+            <div class="flex items-center">
+              <a href="/" aria-label="Author" title="Author" class="mr-3">
+                <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="avatar" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+              </a>
+              <div>
+                <a href="/" aria-label="Author" title="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Andrew Larkin</a>
+                <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Footer  -->
+      <footer class="footer p-10 bg-base-200 text-base-content">
+        <div>
+          <span class="footer-title">Services</span>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div>
+        <div>
+          <span class="footer-title">Company</span>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div>
+        <div>
+          <span class="footer-title">Legal</span>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+          <span class="footer-title">Newsletter</span>
+          <div class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="relative">
+              <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
+              <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </div>
- </div>
 
   </div>
   <script type="module" src="/main.js"></script>
